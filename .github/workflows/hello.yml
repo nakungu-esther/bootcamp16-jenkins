@@ -2,7 +2,7 @@ name: first workflow
 on: push
 jobs:
   my-job:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout code
         uses:  actions/checkout@v4
