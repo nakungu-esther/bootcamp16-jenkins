@@ -3,19 +3,19 @@ on: push
 jobs:
   build-job: 
     runs-on: ubuntu-latest
-      steps:
-      - name: Run many tests
-        run: echo "build job"
+    steps:
+    - name: Run many tests
+      run: echo "build job"
   test-job: 
     needs: build-job
     runs-on: ubuntu-latest
-      steps:
-      - name: Run many tests
-        run: echo "test job"
+    steps:
+    - name: Run many tests
+      run: echo "test job"
   deploy-job: 
     needs: test-job
     runs-on: ubuntu-latest
-      steps:
-      - name: Run many tests
-        run: echo "deploy job"
+    steps:
+    - name: Run many tests
+      run: echo "deploy job"
             
