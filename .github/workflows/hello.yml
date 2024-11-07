@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: first-step
         run: echo "Hello World"
+      - name: Read-File
+        run: cat hello.txt
+
+  
